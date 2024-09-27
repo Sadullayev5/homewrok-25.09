@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form>
+            <h2>Add Product</h2>
+            <input type="text" id="name" placeholder="Enter Product Name">
+            <input type="number" id="price" placeholder="Enter Product Price">
+            <input type="text" id="category" placeholder="Enter Product Category">
+            <input type="number" id="unit" placeholder="Enter Product Unit">
+            <select name="unit" id="unit-option">
+                <option disabled selected>select unit of measure</option>
+                <option value="kg" >kg</option>
+                <option value="liter">liter</option>
+                <option value="pcs">pcs</option>
+            </select>
+            <input id="date" type="date" placeholder="Date">
+            <input id="brought-by" type="text" placeholder="Brought by whom?">
+            <button class="button-64"><span class="text">Add</span></button>
+        </form>
+        <input type="search" class="search" placeholder="Search Product 🔍">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Unit</th>
+                    <th>Date</th>
+                    <th>Brought by</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>   
+        </table>
+    </div>
+    <script src="./build/js/app.js"></script>
+</body>
+</html>
